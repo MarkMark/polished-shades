@@ -2,13 +2,12 @@
   "name": "shade",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://brodem.github.io/",
+  "homepage": "https://brodem.github.io/polished-shades",
   "dependencies": {
     "@types/jest": "24.0.22",
     "@types/node": "12.12.7",
     "@types/react": "^16.9.11",
     "@types/react-dom": "16.9.4",
-    "gh-pages": "^2.1.1",
     "polished": "^3.4.2",
     "react": "^16.11.0",
     "react-copy-to-clipboard": "^5.0.2",
@@ -55,6 +54,7 @@
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.19.1"
   }
 }
