@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { darken, lighten, rem } from 'polished'
+import { darken, lighten, rem, rgba } from 'polished'
 
 import { ABtn } from '../../../Styles/Atoms/Atoms.Buttons'
 import { AInput } from '../../../Styles/Atoms/Atoms.Inputs'
@@ -42,16 +42,6 @@ export default function Content() {
                     const amount = String(i).padStart(3, '0.')
                     const color =
                       s === 'Lighten' ? lighten(amount, c) : darken(amount, c)
-                    let previousColor
-
-                    if (i !== 0) {
-                      const amount = String(i - 1).padStart(3, '0.')
-
-                      previousColor =
-                        s === 'Lighten' ? lighten(amount, c) : darken(amount, c)
-                    }
-
-                    if (previousColor === color) return undefined
 
                     return (
                       <STL.Item key={i} background={color} display="flex">
@@ -66,11 +56,13 @@ export default function Content() {
                             <STL.IconCopy />
 
                             <STL.ItemText
+                              backgroundColor={rgba(COLORS.colorBlack, 0.3)}
                               bottom="0"
                               flex="1"
                               fontSize={CSS_GLOBAL.fontSizeXS}
                               left="0"
                               mb={CSS_GLOBAL.p0}
+                              padding={CSS_GLOBAL.s1}
                               position="absolute"
                               right="0"
                               textAlign="center"

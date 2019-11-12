@@ -18,7 +18,7 @@ const Item = styled(EBox)`
 
 const ItemText = styled(EText)`
   color: ${COLORS.colorWhiteText};
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 `
 
 const IconCopy = styled(Copy)`
